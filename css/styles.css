@@ -44,6 +44,7 @@ border: none;
 
 .tabs button {
     border: none;
+    margin-right: 5px;
 }
 .navbar-item a{
     color: #FFF;
