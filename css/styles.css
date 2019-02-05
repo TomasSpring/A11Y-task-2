@@ -42,6 +42,9 @@ fieldset {
 border: none;
 }
 
+.tabs button {
+    border: none;
+}
 .navbar-item a{
     color: #FFF;
     
