@@ -9,6 +9,10 @@ body input[type="radio"]:focus {
   box-shadow: 0 0 3px 2px #fff, 00 3px 3px #000 !important;
 }
 
+.button.is-info {
+  background-color: #0b0b0b;
+}
+
 a:hover {
   text-decoration: underline;
   color: #0642fc;
