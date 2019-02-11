@@ -9,8 +9,98 @@ body input[type="radio"]:focus {
   box-shadow: 0 0 3px 2px #fff, 00 3px 3px #000 !important;
 }
 
+.file.is-danger .file-cta {
+  background-color: #a80022;
+  border-color: transparent;
+  color: #fff;
+}
+
+.file.is-danger.is-hovered .file-cta,
+.file.is-danger:hover .file-cta {
+  background-color: #a80022;
+  border-color: transparent;
+  color: #fff;
+}
+
+.file.is-danger.is-focused .file-cta,
+.file.is-danger:focus .file-cta {
+  border-color: transparent;
+  box-shadow: 0 0 0.5em rgba(255, 56, 96, 0.25);
+  color: #fff;
+}
+
+.file.is-danger.is-active .file-cta,
+.file.is-danger:active .file-cta {
+  background-color: #a80022;
+  border-color: transparent;
+  color: #fff;
+}
+
 .button.is-info {
   background-color: #0b0b0b;
+}
+
+.notification.is-danger {
+  background-color: #a80022;
+  color: #fff;
+}
+
+.progress.is-danger::-webkit-progress-value {
+  background-color: #a80022;
+}
+
+.progress.is-danger::-moz-progress-bar {
+  background-color: #a80022;
+}
+
+.progress.is-danger::-ms-fill {
+  background-color: #a80022;
+}
+
+.table td.is-danger,
+.table th.is-danger {
+  background-color: #a80022;
+  border-color: #a80022;
+  color: #fff;
+}
+.tag:not(body).is-primary {
+  background-color: #00d1b2;
+  color: #030303;
+}
+.help.is-success {
+  color: #11662f;
+}
+.has-background-grey-light {
+  background-color: #dadada !important;
+}
+.help.is-danger {
+  color: #c40027;
+}
+
+.hero.is-info .subtitle {
+  color: #030303;
+}
+.hero.is-info .title {
+  color: #000000;
+}
+.tag:not(body).is-danger {
+  background-color: #a80022;
+  color: #fff;
+}
+
+.navbar.is-danger {
+  background-color: #a80022;
+  color: #fff;
+}
+
+.message.is-danger .message-header {
+  background-color: #a80022;
+  color: #fff;
+}
+
+.message.is-danger .message-body {
+  border-color: #a80022;
+  color: #cd0930;
 }
 
 a:hover {
