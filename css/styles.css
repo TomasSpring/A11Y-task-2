@@ -4,64 +4,63 @@ body textarea:focus,
 body select:focus,
 body button:focus,
 body input[type="radio"]:focus {
-    outline: 2px solid #0355d9!important;
-    /*border: 2px solid #0355d9!important;*/
-    box-shadow: 0 0 3px 2px #fff, 00 3px 3px #000 !important;
-    
+  outline: 2px solid #0355d9 !important;
+  /*border: 2px solid #0355d9!important;*/
+  box-shadow: 0 0 3px 2px #fff, 00 3px 3px #000 !important;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #0642fc;
+}
 .visuallyhidden {
-    position: absolute;
-    display: inline-block;
-    height:1px;
-    width: 1px;
-    clip: rect(0 0 0 0);
-    padding: 0;
-    overflow:hidden;
-    
+  position: absolute;
+  display: inline-block;
+  height: 1px;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  padding: 0;
+  overflow: hidden;
 }
 .visuallyhidden:focus {
-    width: auto;
-    height: auto;
-    clip: auto;
-    
+  width: auto;
+  height: auto;
+  clip: auto;
 }
 .card-footer a {
-    text-align: center;
+  text-align: center;
 }
 a.external:after {
-    content: "" url('img/external.png');
-    padding-left: 5px;
-    display: inline-block;   
+  content: "" url("img/external.png");
+  padding-left: 5px;
+  display: inline-block;
 }
 a.external {
-   display: inline-block;
-    margin-right: 15px;
+  display: inline-block;
+  margin-right: 15px;
 }
 fieldset {
-border: none;
+  border: none;
 }
 
 .tabs button {
-    border: none;
-    margin-right: 5px;
+  border: none;
+  margin-right: 5px;
 }
-.navbar-item a{
-    color: #FFF;
-    
+.navbar-item a {
+  color: #fff;
 }
 .navbar-item a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.breadcrumb a{
-    color: #fff;
+.breadcrumb a {
+  color: #fff;
 }
 
-.breadcrumb a:hover{
-    color: #fff;
-    text-decoration: underline;
-    
+.breadcrumb a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -149,14 +148,13 @@ border: none;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
 
-
 .has-same-height .card {
   height: 350px;
   overflow: hidden;
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .skills-content .progress {
@@ -168,8 +166,8 @@ border: none;
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
 }
 
 .button.is-primary.is-alt {
@@ -183,7 +181,7 @@ border: none;
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #e6eaee;
 }
 .post:last-child {
   padding-bottom: 0;
@@ -191,9 +189,8 @@ border: none;
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
