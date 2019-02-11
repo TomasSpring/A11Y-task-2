@@ -55,10 +55,14 @@ button.dropdown-item.is-active {
   border-color: transparent;
   color: #fff;
 }
-.has-text-grey-light {
-  color: #606060 !important;
-}
 
+.has-text-grey-light {
+  color: #747171 !important;
+}
+.tag:not(body).is-success {
+  background-color: #23d160;
+  color: #000;
+}
 .file.is-danger.is-hovered .file-cta,
 .file.is-danger:hover .file-cta {
   background-color: #a80022;
