@@ -55,6 +55,9 @@ button.dropdown-item.is-active {
   border-color: transparent;
   color: #fff;
 }
+.has-text-grey-light {
+  color: #606060 !important;
+}
 
 .file.is-danger.is-hovered .file-cta,
 .file.is-danger:hover .file-cta {
