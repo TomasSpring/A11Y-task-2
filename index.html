@@ -24,14 +24,18 @@
               <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;" alt="The company logo">
             </a>
           </div>
-
+          <span class="navbar-burger burger" data-target="navbarMenu" aria-haspopup="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
           <nav id="navbarMenu" role="navigation" class="navbar-menu" aria-labelledby="primary-navigation">
           <h2 class="visuallyhidden" id="primary-navigation">Primary navigation</h2>
             <ul class="navbar-end">
               <li class="navbar-item">
                 <a href="#" class="is-white is-outlined">
                   <span class="icon">
-                    <i class="fa fa-home"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
                   </span>
                   <span>Home</span>
                 </a>
@@ -39,7 +43,7 @@
               <li class="navbar-item">
                 <a href="#" class="is-white is-outlined">
                   <span class="icon">
-                    <i class="fab fa-superpowers"></i>
+                    <i class="fab fa-superpowers" aria-hidden="true"></i>
                   </span>
                   <span>Examples</span>
                 </a>
@@ -55,18 +59,14 @@
               <li class="navbar-item">
                 <a href="#" class="is-white is-outlined">
                   <span class="icon">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github" aria-hidden="true"></i>
                   </span>
                   <span>View Source</span>
                 </a>
               </li>
             </ul>
           </nav>
-          <span class="navbar-burger burger" data-target="navbarMenu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
+          
         </div>
       </div>
       </div>
@@ -166,8 +166,8 @@
                             </span></td>
                 </tr>
                 <tr>
-                  <th id="email">Email:</th>
-                  <td headers="email"><a href="emailto:minion@despicable.me">minion@despicable.me</a></td>
+                  <th id="emailContact">Email:</th>
+                  <td headers="emailContact"><a href="emailto:minion@despicable.me">minion@despicable.me</a></td>
                 </tr>
               </table>
             </div>
@@ -303,7 +303,7 @@
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image has-text-centered">
-              <i class="fa fa-paw"></i>
+              <i class="fa fa-paw" aria-hidden="true"></i>
             </div>
             <div class="card-content">
               <div class="content">
@@ -318,7 +318,7 @@
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image has-text-centered">
-              <i class="fab fa-empire"></i>
+              <i class="fab fa-empire" aria-hidden="true"></i>
             </div>
             <div class="card-content">
               <div class="content">
@@ -334,7 +334,7 @@
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image has-text-centered">
-              <i class="fab fa-apple"></i>
+              <i class="fab fa-apple" aria-hidden="true"></i>
             </div>
             <div class="card-content">
               <div class="content">
@@ -363,25 +363,25 @@
       <h2 class="visuallyhidden">Topics Navigation</h2>
         <li data-target="pane-1" id="1">
           <button class="button" role="tab" aria-selected="true" aria-controls="pane-1">
-            <span class="icon is-small"><i class="fa fa-image"></i></span>
+            <span class="icon is-small"><i class="fa fa-image" aria-hidden="true"></i></span>
             <span>Pictures</span>
           </button>
         </li>
         <li data-target="pane-2" id="2" class="is-active">
            <button class="button" role="tab" aria-selected="true" aria-controls="pane-2" >
-            <span class="icon is-small"><i class="fab fa-empire"></i></span>
+            <span class="icon is-small"><i class="fab fa-empire" aria-hidden="true"></i></span>
             <span>Article</span>
           </button>
         </li>
         <li data-target="pane-3" id="3">
           <button class="button" role="tab" aria-selected="true" aria-controls="pane-3">
-            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+            <span class="icon is-small"><i class="fab fa-superpowers" aria-hidden="true"></i></span>
             <span>Team</span>
           </button>
         </li>
         <li data-target="pane-4" id="4">
           <button class="button" role="tab" aria-selected="true" aria-controls="pane-4" >
-            <span class="icon is-small"><i class="fa fa-film"></i></span>
+            <span class="icon is-small"><i class="fa fa-film" aria-hidden="true"></i></span>
             <span>Video</span>
           </button>
         </li>
@@ -405,7 +405,7 @@
                 <div class="content">
                   <div>Click on image above</div>
                   <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
+                  <button class="button is-link modal-button" data-target="modal-image1" role="button">Image modal</button>
                 </div>
               </div>
             </div>
@@ -422,7 +422,7 @@
                   <div>Tempor orci dapibus ultrices in.</div>
                   <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <button class="button is-link modal-button" data-target="modal-card" >Modal Card</button>
+                  <button class="button is-link modal-button" data-target="modal-card" role="button">Modal Card</button>
                 </div>
               </div>
             </div>
@@ -438,7 +438,7 @@
                 <div class="content">
                   <div>Click anywhere on card</div>
                   <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <button class="button is-link modal-button" data-target="modal-image2" >Image modal</button>
+                  <button class="button is-link modal-button" data-target="modal-image2" role="button" >Image modal</button>
                 </div>
               </div>
             </div>
@@ -453,7 +453,7 @@
         <div class="column">
           <div class="media">
             <div class="media-left">
-              <i class="fab fa-github-square fa-4x"></i>
+              <i class="fab fa-github-square fa-4x" aria-hidden="true"></i>
             </div>
             <div class="media-content">
               <div class="content">
@@ -466,7 +466,7 @@
           </div>
           <div class="media">
             <div class="media-left">
-              <i class="fab fa-empire fa-4x"></i>
+              <i class="fab fa-empire fa-4x" aria-hidden="true"></i>
             </div>
             <div class="media-content">
               <div class="content">
@@ -494,7 +494,7 @@
           </div>
           <div class="media">
             <div class="media-left">
-              <i class="fab fa-github-alt fa-4x"></i>
+              <i class="fab fa-github-alt fa-4x" aria-hidden="true"></i>
             </div>
             <div class="media-content">
               <div class="content">
@@ -515,7 +515,7 @@
         <div class="column is-three-quarters">
           <div class="title has-text-centered">Inspired video</div>
           <div class="embed-container image">
-            <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe id="videoIframe" name="videoIframe" title="Norway Video" src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
           <div class="transcription" lang="end">
           <p>Experience the hidden beauty of Norway on this aerial journey through the nature. Nature's beauty can be so easily missed. It is my hope that my films will contribute to a deeper understanding and gratitude of the natural wonders in our world and to the preservation of our fragile environment in the future.</p>
@@ -952,7 +952,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                  <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 1</span>
                 </div>
               </div>
             </div>
@@ -974,7 +974,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                  <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 0</span>
                 </div>
               </div>
             </div>
@@ -996,7 +996,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                  <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 13</span>
                 </div>
               </div>
             </div>
@@ -1018,7 +1018,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -1040,7 +1040,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -1062,7 +1062,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -1094,10 +1094,10 @@
           <div class="control has-icons-left has-icons-right">
             <input class="input is-success" type="text" id="userName" name="userName">
             <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
+              <i class="fas fa-user" aria-hidden="true"></i>
             </span>
             <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
+              <i class="fas fa-check" aria-hidden="true"></i>
             </span>
           </div>
           <p class="help is-success">This username is available</p>
@@ -1108,10 +1108,10 @@
           <div class="control has-icons-left has-icons-right">
             <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email" name="email">
             <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
             </span>
             <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
+              <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
             </span>
           </div>
           <p class="help is-danger">This email is invalid</p>
@@ -1121,7 +1121,7 @@
           
           <div class="control">
             <div class="select">
-            <label class="label" for"selectSubject">Subject</label>
+            <label class="label" for="selectSubject">Subject</label>
               <select id="selectSubject">
                 <option>Select dropdown</option>
                 <option>With options</option>
@@ -1164,10 +1164,10 @@
 
         <div class="field is-grouped">
           <div class="control">
-            <button class="button is-link">Submit</button>
+            <button class="button is-link" role="button">Submit</button>
           </div>
           <div class="control">
-            <button class="button is-text">Cancel</button>
+            <button class="button is-text" role="button">Cancel</button>
           </div>
         </div>
       </form>
@@ -1182,7 +1182,7 @@
           <div class="notification media has-background-white">
             <div class="media-left">
               <span class="icon">
-                <i class="has-text-warning fas fa-columns fa-lg"></i>
+                <i class="has-text-warning fas fa-columns fa-lg" aria-hidden="true"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1199,7 +1199,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-info">
-                <i class="fab fa-lg fa-wpforms"></i>
+                <i class="fab fa-lg fa-wpforms" aria-hidden="true"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1216,7 +1216,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cubes"></i>
+                <i class="fas fa-lg fa-cubes" aria-hidden="true"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1233,7 +1233,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-grey">
-                <i class="fas fa-lg fa-cogs"></i>
+                <i class="fas fa-lg fa-cogs" aria-hidden="true"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1250,7 +1250,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-primary">
-                <i class="fas fa-lg fa-warehouse"></i>
+                <i class="fas fa-lg fa-warehouse" aria-hidden="true"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1267,7 +1267,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cube"></i>
+                <i class="fas fa-lg fa-cube" aria-hidden="true"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1325,10 +1325,10 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a href="#" target="_blank" title="Opens in new tab"><span class="visuallyhidden">Github</span><i class="fab fa-github-alt fa-2x"></i></a>
-          <a href="#" target="_blank" title="Opens in new tab"><span class="visuallyhidden">Youtube</span><i class="fab fa-youtube fa-2x"></i></a>
-          <a href="#" target="_blank" title="Opens in new tab"><span class="visuallyhidden">Facebook</span><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="#" target="_blank" title="Opens in new tab"><span class="visuallyhidden">Twitter</span><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" target="_blank" title="Opens in new tab"><span class="visuallyhidden">Github</span><i class="fab fa-github-alt fa-2x" aria-hidden="true"></i></a>
+          <a href="#" target="_blank" title="Opens in new tab"><span class="visuallyhidden">Youtube</span><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+          <a href="#" target="_blank" title="Opens in new tab"><span class="visuallyhidden">Facebook</span><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a href="#" target="_blank" title="Opens in new tab"><span class="visuallyhidden">Twitter</span><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
         </div>
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" class="external" target="_blank" title="Opens in new tab">MIT</a>.</p>
       </div>
