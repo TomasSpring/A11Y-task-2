@@ -5,6 +5,8 @@
     burger.classList.toggle("is-active");
     menu.classList.toggle("is-active");
   });
+
+  printNumbersInterval();
 })();
 
 document.querySelectorAll("#nav li").forEach(function(navEl) {
@@ -36,3 +38,15 @@ function toggleTab(selectedNav, targetId) {
     }
   });
 }
+
+function printNumbersInterval() {
+  var description = document.querySelector("#infoDescription");
+  var i = 1;
+  var timerId = setInterval(function() {
+    description.textContent =
+      "Now you see a simple counter. The value now is  " + i;
+    i++;
+  }, 10000);
+}
+
+printNumbersInterval();
