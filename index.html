@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=5">
   <title>Web Accessibility 2019 Q1 BY</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
   <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
@@ -109,7 +109,7 @@
             <div class="field is-grouped">
               <p class="control is-expanded">
               <label for="emailInput" class="visuallyhidden">Please, enter your email and we will notify you</label>
-                <input class="input" name="emailInput" id="emailInput" autocomplete="email">
+                <input class="input" name="emailInput" id="emailInput" autocomplete="email" aria-required="true">
               </p>
               <p class="control">
                 <button type="submit" class="button is-info">Notify Me</button>
@@ -1085,14 +1085,14 @@
         <div class="field">
           <label class="label" for="firstName">Name</label>
           <div class="control">
-            <input class="input" type="text" id="firstName" name="firstName" placeholder="Text input">
+            <input class="input" type="text" id="firstName" name="firstName" placeholder="Text input" aria-required="true">
           </div>
         </div>
 
         <div class="field">
           <label class="label" for="userName">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text" id="userName" name="userName">
+            <input class="input is-success" type="text" id="userName" name="userName" aria-required="true">
             <span class="icon is-small is-left">
               <i class="fas fa-user" aria-hidden="true"></i>
             </span>
@@ -1106,7 +1106,7 @@
         <div class="field">
           <label class="label" for="email">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email" name="email">
+            <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email" name="email" aria-required="true">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope" aria-hidden="true"></i>
             </span>
@@ -1288,8 +1288,8 @@
     <div class="container">
       <div class="columns">
         <div class="column is-3 is-offset-2">
-          <h3 class="is-3 title"><strong>Lessons</strong></h3>
-          <ul>
+          <h3 class="is-3 title expanded-list-heading" aria-controls="lessons"><strong>Lessons</strong></h3>
+          <ul class="expanded-list" id="lessons">
             <li><a href="#" title="">Lorem ipsum dolor sit amet</a></li>
             <li><a href="#" title="">Vestibulum errato isse</a></li>
             <li><a href="#" title="">Lorem ipsum dolor sit amet</a></li>
@@ -1300,8 +1300,8 @@
           </ul>
         </div>
         <div class="column is-3">
-          <h3 class="is-3 title"><strong>News</strong></h3>
-          <ul>
+          <h3 class="is-3 title expanded-list-heading" aria-controls="news"><strong>News</strong></h3>
+          <ul class="expanded-list" id="news">
             <li><a href="#" title="">Labore et dolore magna aliqua</a></li>
             <li><a href="#" title="">Kanban airis sum eschelor</a></li>
             <li><a href="#" title="">Modular modern free</a></li>
@@ -1311,9 +1311,9 @@
             <li><a href="#" title="">Better Angels</a></li>
           </ul>
         </div>
-        <div class="column is-4">
-          <h3 class="is-3 title"><strong>Help</strong></h3>
-          <ul>
+        <div class="column is-4 expanded-list-heading">
+          <h3 class="is-3 title" aria-controls="help"><strong>Help</strong></h3>
+          <ul class="expanded-list" id="help">
             <li><a href="#" title="">Objects in space</a></li>
             <li><a href="#" title="">Playing cards with coyote</a></li>
             <li><a href="#" title="">Goodbye Yellow Brick Road</a></li>
@@ -1393,7 +1393,10 @@
     </div>
     <button class="modal-close is-large" aria-label="Close modal window"><span class="visuallyhidden">Close</span></button>
   </div>
-
+  <div role="region" id="someInfo" aria-live="polite" aria-atomic="true" class="alert">
+    <h2 id="infoTitle">Here you go</h2>
+    <p id="infoDescription">What do you prefer to see?</p>
+  </div>
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>
 </body>
